@@ -126,3 +126,60 @@ span.highlight {
     font-weight: bold;
     font-size: 1.2rem;
 }
+
+.dual-showcase {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 90%;
+    margin: 5% auto;
+    gap: 40px;
+    color: white;
+}
+
+.project {
+    flex: 1 1 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    background-color: #222;
+}
+
+.project-info h2 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.project-tags {
+    font-style: italic;
+    color: #a0c4ff;
+    font-size: 0.95rem;
+    margin: 0.5em 0;
+}
+
+.project-summary {
+    line-height: 1.4;
+}
+
+.project-contributions {
+    padding-left: 20px;
+}
+
+.project-link {
+    margin-top: 10px;
+    display: inline-block;
+    color: #89f0ff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
