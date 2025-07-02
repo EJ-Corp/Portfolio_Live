@@ -58,6 +58,20 @@ a.icon#steam {
     background-image: url("images/icons/steam.svg");
 }
 
+div.about-section {
+    color: white;
+    max-width: 60%;
+    margin: 0 auto 4%;
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+div.about-section h2 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
 div.down-arrow {
     height: 80px;
     display: flex;
