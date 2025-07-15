@@ -20,18 +20,14 @@ div.title-section {
     
 }
 
-svg.title-svg {
-    width: 100%;
-    max-width: 1000px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
 
-@media (max-width: 600px) {
-    svg.title-svg {
-        max-width: 90vw;
-    }
+.site-title {
+  font-size: clamp(3rem, 12vw, 8rem); /* scales between 3rem and 8rem depending on viewport width */
+  font-weight: 900;
+  color: white;
+  text-align: center;
+  margin: 0 0 1rem 0;
+  user-select: none;
 }
 
 div.icons {
