@@ -10,7 +10,9 @@ body {
 
 div.title-section {
     width:100%;
-    height: calc(100vh - 90px);
+    min-height: 100dvh;
+    padding: 20px 10px;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
