@@ -21,9 +21,17 @@ div.title-section {
 }
 
 svg.title-svg {
+    width: 100%;
+    max-width: 1000px;
     height: auto;
-    width: 80%;
-    max-width: 880px;
+    display: block;
+    margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+    svg.title-svg {
+        max-width: 90vw;
+    }
 }
 
 div.icons {
