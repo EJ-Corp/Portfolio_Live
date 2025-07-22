@@ -1,0 +1,112 @@
+/* projects.css */
+
+:root {
+  --primary-bg: #0c1444;
+  --card-bg: #1a1e3d;
+  --highlight-color: #89f0ff;
+  --text-color: #e0e6f1;
+  --accent-color: #a0c4ff;
+  --border-radius: 12px;
+  --max-width: 900px;
+  --padding: 20px;
+  --font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: var(--primary-bg);
+  color: var(--text-color);
+  font-family: var(--font-family);
+  margin: 0;
+  padding: var(--padding);
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: var(--max-width);
+  width: 100%;
+  background-color: var(--card-bg);
+  border-radius: var(--border-radius);
+  padding: 2rem 3rem;
+  box-sizing: border-box;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+h1.project-title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 900;
+  color: var(--highlight-color);
+  user-select: none;
+  text-align: center;
+}
+
+.project-video {
+  width: 100%;
+  border-radius: var(--border-radius);
+  background-color: #111;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+}
+
+.project-info p, 
+.project-info ul {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.project-info p strong {
+  color: var(--highlight-color);
+}
+
+.project-tags {
+  font-style: italic;
+  color: var(--accent-color);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.project-contributions {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-top: 0;
+}
+
+.project-contributions li {
+  margin-bottom: 0.5rem;
+}
+
+.project-links {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.project-links a {
+  display: inline-block;
+  background-color: var(--highlight-color);
+  color: var(--primary-bg);
+  text-decoration: none;
+  font-weight: 700;
+  padding: 0.6rem 1.5rem;
+  border-radius: var(--border-radius);
+  margin: 0 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.project-links a:hover {
+  background-color: #55cfff;
+  color: #0c1444;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 1rem 1.5rem;
+  }
+  h1.project-title {
+    font-size: 2.2rem;
+  }
+  .project-info p, .project-info ul {
+    font-size: 1rem;
+  }
+}
